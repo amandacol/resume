@@ -1,68 +1,82 @@
-# [Start Bootstrap - Resume](https://startbootstrap.com/template-overviews/resume/)
+Font Mfizz by Fizzed
+=======================================
 
-[Resume](https://startbootstrap.com/template-overviews/resume/) is a resume and CV theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features a fixed sidebar with content sections to build a simple, yet elegant resume.
+ - [Fizzed, Inc.](http://fizzed.com) (Follow on Twitter: [@fizzed_inc](http://twitter.com/fizzed_inc))
 
-## Preview
+## Vector Icons for Technology and Software Geeks
 
-[![Resume Preview](https://startbootstrap.com/assets/img/screenshots/themes/resume.png)](https://blackrockdigital.github.io/startbootstrap-resume/)
+Font Mfizz provides scalable vector icons representing programming languages,
+operating systems, software engineering, and technology. It was designed designed
+for technology and software geeks. It can be customized — size, color, drop shadow,
+and anything that can be done with the power of CSS.
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-resume/)**
+[View icons in action and usage information](http://fizzed.com/oss/font-mfizz)
 
-## Status
+Designed by [Fizzed, Inc.](http://fizzed.com/)
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-resume/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-resume.svg)](https://www.npmjs.com/package/startbootstrap-resume)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-resume.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-resume)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-resume/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-resume)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-resume/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-resume?type=dev)
+Updates tweeted [@fizzed_inc](http://twitter.com/fizzed_inc)
 
-## Download and Installation
+## Sponsored by
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/resume/)
-* Install via npm: `npm i startbootstrap-resume`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-resume.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-resume)
+Font Mfizz is proudly sponsored by <a href="https://www.greenback.com">Greenback</a>.  We love the service and think you would too.
 
-## Usage
+<a href="https://www.greenback.com" title="Greenback - Expenses made simple"><img src="https://www.greenback.com/assets/images/logo-greenback.png" height="48" width="166" alt="Greenback"></a>
 
-### Basic Usage
+<a href="https://www.greenback.com" title="Greenback - Expenses made simple">More designing. Less paperwork. Expenses made simple.</a>
 
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+## Releases
 
-### Advanced Usage
+[Download packages](https://github.com/fizzed/font-mfizz/releases)
 
-After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+## CDN
 
-#### Gulp Tasks
+[cdnjs](https://cdnjs.com) now hosts font-mfizz for use by all. Visit [https://cdnjs.com/libraries/font-mfizz](https://cdnjs.com/libraries/font-mfizz) for more info.
 
-- `gulp` the default task that builds everything
-- `gulp watch` browserSync opens the project in your default browser and live reloads when changes are made
-- `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
-- `gulp js` minifies the themes JS file
-- `gulp vendor` copies dependencies from node_modules to the vendor directory
+## Development
 
-You must have npm installed globally in order to use this build environment.
+Building font-mfizz relies on many system-level dependencies.  Rather than you
+trying to setup the environment yourself, we have switched to using
+[Vagrant](https://www.vagrantup.com/) to help automate the setup of a development environment.
+What's great is that even if you're on Linux, Windows, or Mac, you'll get the exact
+environment the font-mfizz maintainers use to build the font.
 
-## Bugs and Issues
+ * Install [Vagrant](https://www.vagrantup.com/)
+ * Run `vagrant up`
+ * Sit back, get a coffee...
+ * Run `vagrant ssh`
+ * You're now ssh'ed into your font-mfizz virtual dev machine
+ * `cd /vagrant`
+ * `java -jar blaze.jar`
+ * On your actual real machine, open up `build/font/preview.html` in your browser
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-resume/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/resume/).
+## Can I add an icon?
 
-## About
+Short answer, yes!
 
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+Since this font is a hobby, the fastest way to get a new one added is to add it
+yourself.  We're happy to accept pull requests and periodically publish new builds. 
+Here are the steps to get an icon officially added:
 
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
+1. Does the icon fit within the theme of this font?  Does it represent a programming language,
+operating system, or software engineering?
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
+2. Find (or create) a .svg (Scalable Vector Graphics) version of the icon you'd like to add.
+Please note that you may need to tweak and simplify your .svg file for it to be properly
+converted into a web font.
 
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+3. Add your .svg file to `src/svg`. The file name will become the eventual glyph name (e.g. java.svg
+becomes .icon-java in the css).
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+4. Follow the steps above to setup your development environment.  Compile the font with your
+   new icon(s).  Verify they look good in a browser.  Sometimes they need tweaking.
 
-## Copyright and License
+5. Submit a pull request.
 
-Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-resume/blob/gh-pages/LICENSE) license.
+## License
+
+This project is licensed under the MIT License and © 2013-2017 Fizzed, Inc. You can find a copy of
+all of the licenses in the projects LICENSE.txt file.
+
+All icons representing commercial companies are trademarks of their respective owners. The use of
+these trademarks does not indicate endorsement of the trademark holder by Fizzed, Font Mfizz, nor
+vice versa.
